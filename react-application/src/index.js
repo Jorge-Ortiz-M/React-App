@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 
 const first_name = "Jorge";
@@ -9,7 +9,9 @@ const company = "Icalia Labs"
 const hobbies = ['Videogames', 'Soccer', 'Teaching']
 const date = new Date();
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
     <section>
         <h1>Hello new world, My name is: {first_name} {last_name}.</h1>
         <p>I'm a {position} at {company}.</p>
@@ -33,4 +35,4 @@ ReactDOM.render(
             </p>
         </footer>
     </section>
-    , document.getElementById("root"));
+);
