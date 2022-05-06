@@ -15,3 +15,7 @@ body {
   .hello-world{
     color: #036161;
   }
+
+  .image-properties{
+    width: 30px;
+  }
