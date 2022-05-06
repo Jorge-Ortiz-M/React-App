@@ -9,21 +9,22 @@ const company = "Icalia Labs"
 const hobbies = ['Videogames', 'Soccer', 'Teaching']
 
 ReactDOM.render(
-    <div>
+    <section>
         <h1>Hello new world, My name is: {first_name} {last_name}.</h1>
         <p>I'm a {position} at {company}.</p>
-        <h2>Skills</h2>
+        <h3>Skills</h3>
         <ul>
             <li>Ruby on Rails</li>
             <li>Ruby</li>
             <li>Javascript</li>
             <li>PostgreSQL.</li>
         </ul>
-        <h2>Hobbies</h2>
+        <h3>Hobbies</h3>
         <ul>
             <li>{hobbies[0]}</li>
             <li>{hobbies[1]}</li>
             <li>{hobbies[2]}</li>
         </ul>
-    </div>
+        <p>Your lucky today's number is: <b>{Math.floor(Math.random() * 10)}</b></p>
+    </section>
     , document.getElementById("root"));
