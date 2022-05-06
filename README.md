@@ -88,3 +88,11 @@ const user_style = {
     Copyrigth - {date.getFullYear()} | Created by {first_name + " " + last_name}.
 </p>
 ```
+
+## Author.
+
+* Jorge Ortiz Mata.
+* Softwate engineer at Icalia Labs.
+* San Luis Potosí S.L.P. México.
+* jorge.ortiz@icalialabs.com
+* +52 444 576 3034
