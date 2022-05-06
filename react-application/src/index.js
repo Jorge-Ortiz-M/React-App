@@ -7,6 +7,7 @@ const last_name = "Ortiz";
 const position = "Software engineer";
 const company = "Icalia Labs"
 const hobbies = ['Videogames', 'Soccer', 'Teaching']
+const date = new Date();
 
 ReactDOM.render(
     <section>
@@ -26,5 +27,10 @@ ReactDOM.render(
             <li>{hobbies[2]}</li>
         </ul>
         <p>Your lucky today's number is: <b>{Math.floor(Math.random() * 10)}</b></p>
+        <footer>
+            <p>
+                Copyrigth - {date.getFullYear()} | Created by {first_name + " " + last_name}.
+            </p>
+        </footer>
     </section>
     , document.getElementById("root"));
