@@ -21,13 +21,32 @@ const user_style = {
     textAlign: "center"
 }
 
+const message_style ={
+    color: "#000000",
+    fontSize: "15px",
+    fontWeight: "700",
+    textAlign: "center"
+}
+const today_status = new Date();
+const today_hour = today_status.getHours();
+let message = "";
 
+if(today_hour >= 4 && today_hour < 12){
+    message = "morning";
+    message_style.color = "00ff00"
+} else if(today_hour >= 12 && today_hour <= 17){
+    message = "afternoon";
+    message_style.color = "#036161";
+} else{
+    message = "night";
+    message_style.color = "gray"
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
     <section>
-        <p></p>
+        <p style={message_style}>Good {message}.</p>
         <h1 className='hello-world'>Hello new world, My name is: {first_name} {last_name}.</h1>
         <p>I'm a {position} at {company}.</p>
         <h3>Skills</h3>
