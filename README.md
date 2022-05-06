@@ -64,3 +64,27 @@ ReactDOM.render(
     , document.getElementById("root"));
 ```
 
+## Adding images.
+
+Here's a quick example for adding images to your react application.
+
+```
+<img src={ruby_image} className='image-properties' alt="ruby-image" />
+```
+
+## Stylesheet.
+
+We can set up the stylesheet inside of the index.js file by doing this:
+
+```
+const user_style = {
+    color: "#00ff00",
+    fontSize: "24px",
+    fontWeight: "700",
+    border: "1px solid #036161"
+}
+
+<p style={user_style}>
+    Copyrigth - {date.getFullYear()} | Created by {first_name + " " + last_name}.
+</p>
+```

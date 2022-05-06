@@ -14,10 +14,20 @@ const rails_image = "https://image.pngaaa.com/154/4122154-middle.png";
 const javascript_image = "https://ayudawp.com/wp-content/uploads/2017/01/javascript-logo-escudo.png";
 const postgresql_image = "https://www.baculasystems.com/wp-content/uploads/2019/01/postgresql-logo.png";
 
+const user_style = {
+    color: "#036161",
+    fontSize: "16px",
+    fontWeight: "700",
+    textAlign: "center"
+}
+
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
     <section>
+        <p></p>
         <h1 className='hello-world'>Hello new world, My name is: {first_name} {last_name}.</h1>
         <p>I'm a {position} at {company}.</p>
         <h3>Skills</h3>
@@ -47,7 +57,7 @@ root.render(
         </ul>
         <p>Your lucky today's number is: <b>{Math.floor(Math.random() * 10)}</b></p>
         <footer>
-            <p>
+            <p style={user_style}>
                 Copyrigth - {date.getFullYear()} | Created by {first_name + " " + last_name}.
             </p>
         </footer>
