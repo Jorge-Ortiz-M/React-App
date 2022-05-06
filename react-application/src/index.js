@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './style.css';
 
 const first_name = "Jorge";
 const last_name = "Ortiz";
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
     <section>
-        <h1>Hello new world, My name is: {first_name} {last_name}.</h1>
+        <h1 className='hello-world'>Hello new world, My name is: {first_name} {last_name}.</h1>
         <p>I'm a {position} at {company}.</p>
         <h3>Skills</h3>
         <ul>

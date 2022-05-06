@@ -7,6 +7,10 @@ React is a javascript library used to design the user interface. It's one the mo
 * In order to create a react app: `npx create-react-app my-app`.
 * In order to run the web application: `npm start`.
 
+## Attributes.
+
+In order to set attributes within HTML tags, the way you need to write them is by using camelCase method. 
+
 ## Practice 01. Adding simple text.
 
 In your src/index.js, you can type single text.
@@ -59,3 +63,4 @@ ReactDOM.render(
     </section>
     , document.getElementById("root"));
 ```
+
